@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact {
+      color: #ffffff;
+      background-color: #cc0000;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    
+
+    .date-box {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+      margin-bottom: 10px;
+      width: 100%; /* Set the width to 100% to match the content width */
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 20px; /* Add margin to separate content from date boxes */
+    }
+    #subcontent{
+       width: 80%; 
+    }
+    .coin {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="contact">Your files have been encrypted</h1>
+  <div class="container">
+    <div class="date-box-container">
+      <div class="date-box">
+        <h2>Ransom will be raised at</h2>
+        <p id="todayDate"></p>
+      </div>
+      <div class="date-box">
+        <h2>Encryption keys will be deleted at</h2>
+        <p id="extraDaysDate"></p>
+      </div>
+    </div>
+    <div class="content">
+        <div id="subcontent">
+            <p>To restore your files, send a Bitcoin payment worth 100 kaffekort to the address listed below.</p>
+            <p>In the payment please add an email for us to send you the decryption executable.</p>
+            <p>Send the bitcoins as fast as possible you will have no luck cracking our encryption.</p>
+            <div>
+                <h1 class="coin">Bitcoin Address</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="QR Code">
+                <p>3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to display today's date and a date a few extra days from today
+    const todayDateElement = document.getElementById("todayDate");
+    const extraDaysDateElement = document.getElementById("extraDaysDate");
+
+    const today = new Date();
+    
+    today.setDate(today.getDate() + 5);
+    todayDateElement.textContent = today.toDateString();
+
+    const extraDays = new Date();
+    extraDays.setDate(today.getDate() + 10); // Adjust the number of extra days as needed
+    extraDaysDateElement.textContent = extraDays.toDateString();
+  </script>
+</body>
+</html>
