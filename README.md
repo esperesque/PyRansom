@@ -1,7 +1,7 @@
 # PyRansom - A Python Ransomware Script
 ## Authors: Simon Nilsson & Levi Tuoremaa
 
-**This script was developed for the course Network Programming and Security at Linköping University. Its purpose is not to be used maliciously, but rather to expose the techniques commonly used by ransomware scripts for educational purposes. Please exercise care as it does have a destructive funcitonality and slight changes could cause it to encrypt an entire drive.**
+**This script was developed for the course Network Programming and Security at Linköping University. Its purpose is not to be used maliciously, but rather to expose the techniques commonly used by ransomware scripts for educational purposes. Please exercise care as it does have a destructive functionality and slight changes could cause it to encrypt an entire drive.**
 
 This is a ransomware script that encrypts the files on a target's computer. Upon receipt of payment from the victim, a key is provided which can be used to decrypt the files.
 
