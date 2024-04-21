@@ -1,3 +1,8 @@
+# PyRansom2 - A Python Ransomware Script
+## Authors: Simon Nilsson & Levi Tuoremaa
+
+**This script was developed for the course Network Programming and Security at Linköping University. It was made purely for educational purposes, but please exercise care as it does have a destructive funcitonality and slight changes could cause it to encrypt an entire drive.**
+
 This is a ransomware script that encrypts the files on a target's computer. Upon receipt of payment from the victim, a key is provided which can be used to decrypt the files.
 
 When run, the script will generate a random AES key for symmetric key encryption and use this to encrypt files within the files/ folder. Only certain specified file extensions will be targeted to avoid encrypting files that might be very large, such as video files. After encryption, the AES key itself will be encrypted using RSA encryption. A private RSA key from the attacker is required in order to decrypt the AES key and restore the files.
