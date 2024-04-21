@@ -1,4 +1,4 @@
-# PyRansom2 - A Python Ransomware Script
+# PyRansom - A Python Ransomware Script
 ## Authors: Simon Nilsson & Levi Tuoremaa
 
 **This script was developed for the course Network Programming and Security at Linköping University. Please exercise care as it does have a destructive funcitonality and slight changes could cause it to encrypt an entire drive.**
